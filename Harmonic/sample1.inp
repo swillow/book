@@ -1,0 +1,7 @@
+dt 0.2
+l_restart 0
+nstep 100000
+nbead 16 
+nref  10
+mass1  1.0
+
