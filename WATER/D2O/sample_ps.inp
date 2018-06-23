@@ -3,7 +3,7 @@ l_restart 0
 nstep 400000
 nbead 64 
 nref  10
-ZPE   9.49    ! kcal/mol   [9.49]
+ZPE   9.837    ! kcal/mol   [9.49]
 mass1 16.0     ! amu
 mass2  2.0     ! amu
 mass3  2.0     ! amu

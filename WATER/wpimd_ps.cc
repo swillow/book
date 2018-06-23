@@ -88,13 +88,13 @@ static void sample_rho ()
     
     // OH1
     arma::vec3 dr = ri_o - ri_h1;
-    double    dx  = arma::dot(dr, dr);
+    double    dx  = std::sqrt(arma::dot(dr, dr));
     int  id1  = (int) round( (dx-roh0) /delt_x) + 200;
     
     if (id1 >= 0 && id1 < 400) prob_roh(id1) += 1;
     
     dr  = ri_o - ri_h2; 
-    dx  = arma::dot(dr, dr);
+    dx  = std::sqrt(arma::dot(dr, dr));
     id1  = (int) round( (dx-roh0) /delt_x) + 200;
     
     if (id1 >= 0 && id1 < 400) prob_roh(id1) += 1;
